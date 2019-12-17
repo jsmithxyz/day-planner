@@ -1,4 +1,4 @@
-//make sure the document loads first before applying jquery
+//Make sure the document loads first before applying jquery
 $(document).ready(function() {
 retrieveInput(); 
 
@@ -13,10 +13,10 @@ saveBtn.on("click", function() {
     var time = $(this).siblings(".hour").text();
         localStorage.setItem(time,value);
 });
- 
+
+ //Set current time (in hours) to a variable
 var now = new Date($.now());
 var currentHour = now.getHours();
-console.log(currentHour);
 colorHour(); 
 
 // Retrieves localStorage inputs at load
